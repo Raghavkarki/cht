@@ -1,0 +1,47 @@
+
+  <model>
+    <instance>
+        <assessment xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="assessment" prefix="J1!assessment!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <task_id/>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <name/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <name/>
+                  <phone/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <patient_name/>
+          <group_assessment>
+            <cough/>
+            <cough_duration/>
+          </group_assessment>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </assessment>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>testing</h:title>
+    <model>
+      <instance>
+        <name id="assessment" prefix="J1!assessment!" delimiter="#" version="1">
+          <name/>
+          <date_of_birth/>
+          <age/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </name>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/name/name" type="string"/>
+      <bind nodeset="/name/date_of_birth" type="date"/>
+      <bind nodeset="/name/age" type="int"/>
+      <bind nodeset="/name/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <input ref="/name/name">
+      <label>What is your name?</label>
+    </input>
+    <input ref="/name/date_of_birth">
+      <label>When were you born?</label>
+    </input>
+    <input ref="/name/age">
+      <label>How old are you?</label>
+    </input>
+  </h:body>
+</h:html>

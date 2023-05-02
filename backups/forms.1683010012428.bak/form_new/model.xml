@@ -1,0 +1,114 @@
+
+  <model>
+    <instance>
+        <new xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="covid19_rdt_capture" prefix="J1!covid19_rdt_capture!" delimiter="#" version="2021-10-21_23-11">
+          <inputs tag="hidden">
+            <source>user</source>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <first_name/>
+              <last_name/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <phone/>
+              <phone_alternate/>
+              <address/>
+              <parent>
+                <_id/>
+                <name/>
+                <address/>
+                <parent>
+                  <_id/>
+                  <name/>
+                  <address/>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <age/>
+          <test-information tag="hidden">
+            <session_id/>
+            <administrator_id/>
+            <administrator_name/>
+            <test_id/>
+            <facility_id/>
+            <facility_name/>
+            <facility_address/>
+            <facility_test_setting/>
+            <other_test_setting/>
+            <test_reason/>
+            <symptoms/>
+            <days_since_symptoms_began/>
+            <specimen_type/>
+            <specimen_type_other/>
+            <rdt_lot/>
+            <rdt_lot_expiry_date/>
+            <additional_notes/>
+          </test-information>
+          <capture tag="hidden">
+            <rdtoolkit-capture>
+              <action>org.rdtoolkit.action.Capture</action>
+              <note_instructions_provision/>
+              <android-app-inputs>
+                <rdt_session_id/>
+              </android-app-inputs>
+              <android-app-outputs>
+                <rdt_session_bundle>
+                  <rdt_session_state/>
+                  <rdt_session_time_started/>
+                  <rdt_session_time_resolved/>
+                  <rdt_session_time_expired/>
+                  <rdt_session_test_profile/>
+                  <rdt_session_result_bundle>
+                    <rdt_session_result_time_read/>
+                    <rdt_session_result_extra_images>
+                      <cropped/>
+                    </rdt_session_result_extra_images>
+                    <rdt_session_result_map>
+                      <sars_cov2/>
+                    </rdt_session_result_map>
+                  </rdt_session_result_bundle>
+                </rdt_session_bundle>
+              </android-app-outputs>
+              <preview_session_state/>
+            </rdtoolkit-capture>
+            <note_continue_1/>
+            <note_continue_2/>
+          </capture>
+          <repeat-test>
+            <repeat_test/>
+            <repeat_test_reason/>
+            <repeat_test_reason_other/>
+          </repeat-test>
+          <summary>
+            <time_started/>
+            <time_read/>
+            <time_expired/>
+            <results_expired/>
+            <result/>
+            <summary_header tag="hidden"/>
+            <summary_details tag="hidden"/>
+            <summary_name tag="hidden"/>
+            <summary_info tag="hidden"/>
+            <summary_rdt_loinc_long_common_name tag="hidden"/>
+            <summary_results_expired tag="hidden"/>
+            <summary_results_expired_2 tag="hidden"/>
+            <summary_results_repeat tag="hidden"/>
+            <summary_results tag="hidden"/>
+            <summary_image type="binary"/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </new>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

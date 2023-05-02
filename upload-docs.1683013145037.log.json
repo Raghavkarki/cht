@@ -1,0 +1,14 @@
+{
+  "ok": [
+    "189bbac0-1747-5d09-b71e-6655f8b53850",
+    "313b2434-1b1c-5a32-9c30-07b716b3f6ac",
+    "9d87048b-4b55-51b9-8d93-0cbeb79b7ba6"
+  ],
+  "failed": {
+    "1a5aa2f7-3036-5062-97ed-04b07645663a": "conflict: Document update conflict.",
+    "4c734dbf-4fb5-5c7d-89cf-8da41a845f7d": "conflict: Document update conflict.",
+    "636689f7-a16b-5322-8d23-5a84a5a4da94": "conflict: Document update conflict.",
+    "6cd92259-b9d0-540d-a2a9-c779b1fb3477": "conflict: Document update conflict.",
+    "8b7c3448-dc82-54ad-8024-b403f3e65def": "conflict: Document update conflict."
+  }
+}
